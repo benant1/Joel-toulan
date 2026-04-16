@@ -1,0 +1,513 @@
+.about {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  width: 100%;
+}
+
+.sectionHeader {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  width: 100%;
+}
+
+.sectionHeader h2 {
+  margin: 0;
+  font-size: clamp(2rem, 2.5vw, 2.75rem);
+  color: #ffffff;
+}
+
+.sectionSubtitle {
+  color: #60a5fa;
+  font-size: 1.1rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.22em;
+  background: linear-gradient(135deg, #60a5fa 0%, #06b6d4 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  display: inline-block;
+  padding: 12px 24px;
+  border-radius: 12px;
+  border: 2px solid rgba(96, 165, 250, 0.3);
+  width: fit-content;
+  margin: 0;
+  transition: all 0.3s ease;
+}
+
+.sectionSubtitle::before {
+  content: '✨';
+  margin-right: 8px;
+  font-size: 1rem;
+}
+
+.sectionSubtitle:hover {
+  border-color: rgba(96, 165, 250, 0.6);
+  box-shadow: 0 8px 24px rgba(96, 165, 250, 0.2);
+}
+
+.aboutContent {
+  display: flex;
+  flex-direction: column;
+  gap: 48px;
+}
+
+.introSection {
+  padding: 40px;
+  border-radius: 24px;
+  background: linear-gradient(135deg, rgba(79, 70, 229, 0.15), rgba(124, 58, 237, 0.1));
+  border: 2px solid rgba(79, 70, 229, 0.3);
+  transition: all 0.3s ease;
+}
+
+.introText {
+  margin: 0;
+  font-size: 1.05rem;
+  line-height: 1.9;
+  color: #cbd5e1;
+  letter-spacing: 0.3px;
+}
+
+.highlight {
+  background: linear-gradient(135deg, #60a5fa 0%, #a78bfa 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  font-weight: 700;
+  position: relative;
+  padding: 0 2px;
+  border-radius: 4px;
+}
+
+.milestonesSection,
+.challengesSection,
+.communitySection,
+.philosophySection {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.subTitle {
+  margin: 0;
+  font-size: 1.6rem;
+  font-weight: 800;
+  color: #ffffff;
+  letter-spacing: -0.5px;
+}
+
+.timeline {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.timelineItem {
+  display: flex;
+  gap: 24px;
+  padding: 24px;
+  border-radius: 16px;
+  background: linear-gradient(135deg, rgba(255, 255, 255, 0.08), rgba(255, 255, 255, 0.02));
+  border: 2px solid rgba(96, 165, 250, 0.2);
+  transition: all 0.3s cubic-bezier(0.23, 1, 0.32, 1);
+  position: relative;
+}
+
+.timelineItem:hover {
+  border-color: rgba(96, 165, 250, 0.5);
+  background: linear-gradient(135deg, rgba(96, 165, 250, 0.1), rgba(96, 165, 250, 0.05));
+  transform: translateX(8px);
+}
+
+.timelineIcon {
+  font-size: 2.5rem;
+  line-height: 1;
+  flex-shrink: 0;
+  filter: drop-shadow(0 4px 12px rgba(96, 165, 250, 0.2));
+}
+
+.timelineContent {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.timelineYear {
+  font-size: 0.9rem;
+  font-weight: 700;
+  color: #60a5fa;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+}
+
+.timelineTitle {
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: #ffffff;
+}
+
+.timelineDescription {
+  font-size: 0.95rem;
+  color: #cbd5e1;
+  line-height: 1.6;
+}
+
+.statsGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 24px;
+}
+
+.statCard {
+  padding: 32px 24px;
+  border-radius: 20px;
+  background: linear-gradient(135deg, rgba(255, 255, 255, 0.08), rgba(255, 255, 255, 0.02));
+  border: 2px solid rgba(96, 165, 250, 0.2);
+  text-align: center;
+  transition: all 0.3s cubic-bezier(0.23, 1, 0.32, 1);
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.statCard:hover {
+  border-color: rgba(96, 165, 250, 0.5);
+  box-shadow: 0 20px 50px rgba(96, 165, 250, 0.15);
+  transform: translateY(-8px);
+}
+
+.statValue {
+  font-size: 2.2rem;
+  font-weight: 900;
+  background: linear-gradient(135deg, #60a5fa 0%, #06b6d4 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.statType {
+  font-size: 1rem;
+  font-weight: 700;
+  color: #ffffff;
+}
+
+.statDesc {
+  font-size: 0.85rem;
+  color: #94a3b8;
+}
+
+.challengesList {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.challengeItem {
+  display: flex;
+  gap: 16px;
+  padding: 16px;
+  border-radius: 12px;
+  background: linear-gradient(135deg, rgba(79, 70, 229, 0.1), rgba(79, 70, 229, 0.05));
+  border: 1px solid rgba(79, 70, 229, 0.2);
+  transition: all 0.3s ease;
+}
+
+.challengeItem:hover {
+  background: linear-gradient(135deg, rgba(79, 70, 229, 0.15), rgba(79, 70, 229, 0.08));
+  border-color: rgba(79, 70, 229, 0.4);
+  transform: translateX(4px);
+}
+
+.challengeIcon {
+  font-size: 1.2rem;
+  font-weight: 800;
+  color: #60a5fa;
+  flex-shrink: 0;
+}
+
+.challengeItem p {
+  margin: 0;
+  color: #cbd5e1;
+  line-height: 1.6;
+}
+
+.communitySection {
+  padding: 40px;
+  border-radius: 24px;
+  background: linear-gradient(135deg, rgba(168, 85, 247, 0.15), rgba(124, 58, 237, 0.1));
+  border: 2px solid rgba(168, 85, 247, 0.3);
+}
+
+.communityText {
+  margin: 0 0 20px;
+  font-size: 1rem;
+  line-height: 1.8;
+  color: #cbd5e1;
+}
+
+.communityText:last-child {
+  margin: 0;
+}
+
+.communityText strong {
+  color: #a78bfa;
+  font-weight: 700;
+}
+
+.philosophyCards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 24px;
+}
+
+.card {
+  padding: 32px 24px;
+  border-radius: 20px;
+  background: linear-gradient(135deg, rgba(255, 255, 255, 0.08), rgba(255, 255, 255, 0.02));
+  border: 2px solid rgba(255, 255, 255, 0.12);
+  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.25);
+  transition: all 0.4s cubic-bezier(0.23, 1, 0.320, 1);
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  align-items: center;
+  text-align: center;
+}
+
+.card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.1), transparent);
+  transition: left 0.5s ease;
+}
+
+.card:hover {
+  transform: translateY(-8px);
+  border-color: rgba(255, 255, 255, 0.25);
+  box-shadow: 0 32px 70px rgba(0, 0, 0, 0.35);
+}
+
+.card:hover::before {
+  left: 100%;
+}
+
+.cardIcon {
+  font-size: 2.5rem;
+  line-height: 1;
+}
+
+.cardTitle {
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: #ffffff;
+  position: relative;
+  z-index: 2;
+}
+
+.card p {
+  margin: 0;
+  font-size: 0.95rem;
+  color: #cbd5e1;
+  line-height: 1.6;
+  position: relative;
+  z-index: 2;
+}
+
+@media (max-width: 768px) {
+  .sectionHeader h2 {
+    font-size: clamp(1.75rem, 2.5vw, 2.2rem);
+  }
+
+  .about {
+    padding: 0;
+  }
+
+  .aboutContent {
+    gap: 24px;
+  }
+
+  .introSection {
+    margin-bottom: 8px;
+  }
+
+  .introText {
+    font-size: 0.95rem;
+    line-height: 1.7;
+  }
+
+  .timeline {
+    gap: 16px;
+  }
+
+  .timelineItem {
+    gap: 12px;
+    padding: 16px;
+  }
+
+  .timelineIcon {
+    font-size: 1.8rem;
+    width: 50px;
+    height: 50px;
+    min-width: 50px;
+  }
+
+  .timelineYear {
+    font-size: 0.85rem;
+  }
+
+  .timelineTitle {
+    font-size: 1rem;
+  }
+
+  .timelineDescription {
+    font-size: 0.85rem;
+  }
+
+  .statsGrid {
+    grid-template-columns: 1fr;
+    gap: 16px;
+  }
+
+  .statCard {
+    padding: 20px;
+  }
+
+  .statValue {
+    font-size: 1.8rem;
+  }
+
+  .statType {
+    font-size: 0.95rem;
+  }
+
+  .statDesc {
+    font-size: 0.8rem;
+  }
+
+  .challengesSection {
+    margin-top: 20px;
+  }
+
+  .subTitle {
+    font-size: 1.3rem;
+    margin-bottom: 16px;
+  }
+
+  .challengesList {
+    gap: 12px;
+  }
+
+  .challengeItem {
+    padding: 12px;
+    font-size: 0.9rem;
+  }
+
+  .philosophyCards {
+    grid-template-columns: 1fr;
+    gap: 16px;
+  }
+
+  .card {
+    padding: 20px;
+  }
+
+  .cardTitle {
+    font-size: 1.05rem;
+  }
+
+  .card p {
+    font-size: 0.85rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .sectionHeader h2 {
+    font-size: clamp(1.5rem, 2.2vw, 1.85rem);
+  }
+
+  .introText {
+    font-size: 0.85rem;
+    line-height: 1.6;
+  }
+
+  .timelineItem {
+    gap: 10px;
+    padding: 12px;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .timelineIcon {
+    font-size: 1.5rem;
+    width: 45px;
+    height: 45px;
+    min-width: 45px;
+  }
+
+  .timelineYear {
+    font-size: 0.75rem;
+  }
+
+  .timelineTitle {
+    font-size: 0.95rem;
+  }
+
+  .timelineDescription {
+    font-size: 0.8rem;
+  }
+
+  .statsGrid {
+    gap: 12px;
+  }
+
+  .statCard {
+    padding: 16px;
+  }
+
+  .statValue {
+    font-size: 1.5rem;
+  }
+
+  .statType {
+    font-size: 0.85rem;
+  }
+
+  .statDesc {
+    font-size: 0.75rem;
+  }
+
+  .subTitle {
+    font-size: 1.1rem;
+    margin-bottom: 12px;
+  }
+
+  .challengeItem {
+    padding: 10px;
+    font-size: 0.8rem;
+  }
+
+  .card {
+    padding: 16px;
+  }
+
+  .cardIcon {
+    font-size: 2rem;
+    margin-bottom: 8px;
+  }
+
+  .cardTitle {
+    font-size: 0.95rem;
+  }
+
+  .card p {
+    font-size: 0.8rem;
+  }
+}
