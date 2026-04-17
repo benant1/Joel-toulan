@@ -16,6 +16,25 @@ const geistMono = Geist_Mono({
 export const metadata: Metadata = {
   title: "Portfolio Joel Toulan",
   description: "Portfolio personnel de Joel Toulan — développeur web et créateur de contenu sur les réseaux sociaux.",
+  openGraph: {
+    title: "Portfolio Joel Toulan",
+    description: "Portfolio personnel de Joel Toulan — développeur web et créateur de contenu sur les réseaux sociaux.",
+    url: "https://joel-toulan.com",
+    siteName: "Joel Toulan",
+    images: [
+      {
+        url: "/joel-toulan.png",
+        width: 1200,
+        height: 630,
+        alt: "Joel Toulan",
+      },
+    ],
+    type: "website",
+  },
+  icons: {
+    icon: "/joel-toulan.png",
+  },
+  keywords: ["Joel Toulan", "portfolio", "développeur web", "contenu", "freelance"],
 };
 
 export const viewport: Viewport = {
