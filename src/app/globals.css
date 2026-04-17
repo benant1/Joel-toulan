@@ -1,10 +1,11 @@
 html {
   height: 100%;
   color-scheme: dark;
-  scrollbar-gutter: stable;
   margin: 0;
   padding: 0;
   width: 100%;
+  overflow-x: clip;
+  overscroll-behavior-x: none;
 }
 
 body {
@@ -12,6 +13,10 @@ body {
   margin: 0;
   padding: 0;
   width: 100%;
+  max-width: 100%;
+  overflow-x: clip;
+  overscroll-behavior-x: none;
+  touch-action: pan-y;
   color: #f8fafc;
   background: #020617;
   font-family: var(--font-geist-sans), system-ui, -apple-system, sans-serif;

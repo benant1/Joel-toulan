@@ -1,118 +1,18 @@
 .contact {
   display: grid;
   grid-template-columns: 1.5fr 1fr;
-  gap: 24px;
+  gap: 20px;
   width: 100%;
-}
-
-@media (max-width: 1000px) {
-  .contact {
-    grid-template-columns: 1fr;
-  }
-}
-
-@media (max-width: 640px) {
-  .contact {
-    gap: 16px;
-  }
-
-  .contactCard,
-  .socialsCard {
-    padding: 24px;
-  }
-
-  .sectionSubtitle {
-    padding: 8px 16px;
-    font-size: 0.95rem;
-    border-radius: 10px;
-  }
-
-  .contactCard h2 {
-    font-size: clamp(1.5rem, 2.2vw, 1.85rem);
-  }
-
-  .contactCard p {
-    font-size: 0.9rem;
-  }
-
-  .primaryButton {
-    padding: 12px 24px;
-    font-size: 0.9rem;
-  }
-
-  .socialsCard h3 {
-    font-size: 1.15rem;
-    margin-bottom: 12px;
-  }
-
-  .socials {
-    gap: 10px;
-  }
-
-  .socials a {
-    padding: 10px 14px;
-    font-size: 0.9rem;
-    border-radius: 14px;
-  }
-}
-
-@media (max-width: 480px) {
-  .contact {
-    gap: 12px;
-  }
-
-  .contactCard,
-  .socialsCard {
-    padding: 20px;
-    border-radius: 20px;
-  }
-
-  .sectionSubtitle {
-    padding: 6px 12px;
-    font-size: 0.85rem;
-    font-weight: 600;
-  }
-
-  .contactCard h2 {
-    font-size: clamp(1.3rem, 2vw, 1.65rem);
-    margin-bottom: 8px;
-  }
-
-  .contactCard p {
-    font-size: 0.85rem;
-    line-height: 1.6;
-  }
-
-  .primaryButton {
-    width: 100%;
-    padding: 11px 20px;
-    font-size: 0.85rem;
-  }
-
-  .socialsCard h3 {
-    font-size: 1.05rem;
-    margin-bottom: 10px;
-  }
-
-  .socials {
-    gap: 8px;
-  }
-
-  .socials a {
-    padding: 9px 12px;
-    font-size: 0.8rem;
-    border-radius: 12px;
-  }
 }
 
 .contactCard,
 .socialsCard {
-  padding: 40px;
-  border-radius: 28px;
+  padding: 28px;
+  border-radius: 22px;
   background: linear-gradient(135deg, rgba(255, 255, 255, 0.08), rgba(255, 255, 255, 0.02));
   border: 2px solid rgba(255, 255, 255, 0.12);
-  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.25);
-  transition: all 0.4s cubic-bezier(0.23, 1, 0.320, 1);
+  box-shadow: 0 16px 40px rgba(0, 0, 0, 0.2);
+  transition: all 0.4s cubic-bezier(0.23, 1, 0.32, 1);
   position: relative;
   overflow: hidden;
 }
@@ -125,7 +25,7 @@
   left: -100%;
   width: 100%;
   height: 100%;
-  background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.1), transparent);
+  background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.08), transparent);
   transition: left 0.5s ease;
 }
 
@@ -135,14 +35,12 @@
 }
 
 .contactCard:hover {
-  transform: translateY(-8px);
+  transform: translateY(-6px);
   border-color: rgba(59, 130, 246, 0.6);
-  box-shadow: 0 32px 70px rgba(59, 130, 246, 0.25);
+  box-shadow: 0 26px 55px rgba(59, 130, 246, 0.22);
 }
 
-.contactCard:hover::before {
-  left: 100%;
-}
+.contactCard:hover::before { left: 100%; }
 
 .socialsCard {
   border-color: rgba(139, 92, 246, 0.4);
@@ -150,31 +48,29 @@
 }
 
 .socialsCard:hover {
-  transform: translateY(-8px);
+  transform: translateY(-6px);
   border-color: rgba(139, 92, 246, 0.6);
-  box-shadow: 0 32px 70px rgba(139, 92, 246, 0.25);
+  box-shadow: 0 26px 55px rgba(139, 92, 246, 0.22);
 }
 
-.socialsCard:hover::before {
-  left: 100%;
-}
+.socialsCard:hover::before { left: 100%; }
 
 .sectionSubtitle {
   color: #60a5fa;
-  font-size: 1.1rem;
+  font-size: 0.95rem;
   font-weight: 700;
   text-transform: uppercase;
-  letter-spacing: 0.22em;
+  letter-spacing: 0.2em;
   background: linear-gradient(135deg, #60a5fa 0%, #06b6d4 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
   display: inline-block;
-  padding: 12px 24px;
-  border-radius: 12px;
+  padding: 8px 18px;
+  border-radius: 10px;
   border: 2px solid rgba(96, 165, 250, 0.3);
   width: fit-content;
-  margin: 0;
+  margin: 0 0 12px;
   transition: all 0.3s ease;
   position: relative;
   overflow: hidden;
@@ -182,33 +78,36 @@
 
 .sectionSubtitle::before {
   content: '📞';
-  margin-right: 8px;
-  font-size: 1rem;
+  margin-right: 6px;
+  font-size: 0.9rem;
 }
 
 .sectionSubtitle:hover {
   border-color: rgba(96, 165, 250, 0.6);
-  box-shadow: 0 8px 24px rgba(96, 165, 250, 0.2);
+  box-shadow: 0 6px 20px rgba(96, 165, 250, 0.2);
 }
 
 .contactCard h2 {
-  margin: 0;
-  font-size: clamp(2rem, 2.25vw, 2.4rem);
+  margin: 0 0 8px;
+  font-size: clamp(1.6rem, 2vw, 2.2rem);
   color: #ffffff;
 }
 
 .contactCard p {
   color: #cbd5e1;
   line-height: 1.75;
+  font-size: 0.92rem;
+  margin: 0 0 16px;
 }
 
 .primaryButton {
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  padding: 16px 28px;
+  padding: 13px 24px;
   border-radius: 999px;
   font-weight: 700;
+  font-size: 0.9rem;
   color: white;
   background: #4f46e5;
   text-decoration: none;
@@ -217,27 +116,29 @@
 
 .primaryButton:hover {
   transform: translateY(-2px);
-  box-shadow: 0 24px 44px rgba(79, 70, 229, 0.3);
+  box-shadow: 0 20px 40px rgba(79, 70, 229, 0.3);
 }
 
 .socialsCard h3 {
-  margin-bottom: 18px;
+  margin: 0 0 14px;
   color: #ffffff;
+  font-size: 1.1rem;
 }
 
 .socials {
   display: grid;
-  gap: 12px;
+  gap: 10px;
 }
 
 .socials a {
   display: inline-flex;
   align-items: center;
   gap: 10px;
-  padding: 14px 18px;
-  border-radius: 18px;
+  padding: 12px 16px;
+  border-radius: 14px;
   border: 1px solid rgba(255, 255, 255, 0.14);
   color: #ffffff;
+  font-size: 0.88rem;
   background: rgba(255, 255, 255, 0.05);
   text-decoration: none;
   transition: transform 0.18s ease, box-shadow 0.18s ease, border-color 0.18s ease;
@@ -245,7 +146,62 @@
 
 .socials a:hover {
   transform: translateY(-2px);
-  box-shadow: 0 14px 30px rgba(0, 0, 0, 0.16);
+  box-shadow: 0 12px 26px rgba(0, 0, 0, 0.15);
   border-color: rgba(59, 130, 246, 0.28);
 }
 
+@media (max-width: 1000px) {
+  .contact { grid-template-columns: 1fr; }
+}
+
+@media (max-width: 640px) {
+  .contact { gap: 14px; }
+
+  .contactCard,
+  .socialsCard { padding: 22px; }
+
+  .contactCard h2 { font-size: clamp(1.4rem, 2.2vw, 1.75rem); }
+  .contactCard p { font-size: 0.86rem; }
+
+  .primaryButton {
+    padding: 11px 22px;
+    font-size: 0.86rem;
+  }
+
+  .socialsCard h3 { font-size: 1rem; }
+
+  .socials a {
+    padding: 10px 14px;
+    font-size: 0.84rem;
+    border-radius: 12px;
+  }
+}
+
+@media (max-width: 480px) {
+  .contact { gap: 12px; }
+
+  .contactCard,
+  .socialsCard {
+    padding: 18px;
+    border-radius: 18px;
+  }
+
+  .contactCard h2 { font-size: clamp(1.25rem, 2vw, 1.55rem); }
+  .contactCard p { font-size: 0.8rem; line-height: 1.6; }
+
+  .primaryButton {
+    width: 100%;
+    padding: 11px 20px;
+    font-size: 0.82rem;
+  }
+
+  .socialsCard h3 { font-size: 0.95rem; }
+
+  .socials { gap: 8px; }
+
+  .socials a {
+    padding: 9px 12px;
+    font-size: 0.78rem;
+    border-radius: 10px;
+  }
+}

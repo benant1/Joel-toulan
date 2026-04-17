@@ -1,36 +1,36 @@
 .community {
   display: flex;
   flex-direction: column;
-  gap: 24px;
+  gap: 20px;
   width: 100%;
 }
 
 .sectionHeader {
   display: flex;
   flex-direction: column;
-  gap: 14px;
+  gap: 10px;
   width: 100%;
 }
 
 .sectionHeader h2 {
   margin: 0;
-  font-size: clamp(2rem, 2.5vw, 2.75rem);
+  font-size: clamp(1.6rem, 2.2vw, 2.4rem);
   color: #ffffff;
 }
 
 .sectionSubtitle {
   color: #60a5fa;
-  font-size: 1.1rem;
+  font-size: 0.95rem;
   font-weight: 700;
   text-transform: uppercase;
-  letter-spacing: 0.22em;
+  letter-spacing: 0.2em;
   background: linear-gradient(135deg, #60a5fa 0%, #06b6d4 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
   display: inline-block;
-  padding: 12px 24px;
-  border-radius: 12px;
+  padding: 8px 18px;
+  border-radius: 10px;
   border: 2px solid rgba(96, 165, 250, 0.3);
   width: fit-content;
   margin: 0;
@@ -41,19 +41,19 @@
 
 .sectionSubtitle::before {
   content: '💫';
-  margin-right: 8px;
-  font-size: 1rem;
+  margin-right: 6px;
+  font-size: 0.9rem;
 }
 
 .sectionSubtitle:hover {
   border-color: rgba(96, 165, 250, 0.6);
-  box-shadow: 0 8px 24px rgba(96, 165, 250, 0.2);
+  box-shadow: 0 6px 20px rgba(96, 165, 250, 0.2);
 }
 
 .communityGrid {
   display: flex;
   flex-direction: column;
-  gap: 40px;
+  gap: 28px;
   width: 100%;
   align-items: center;
 }
@@ -63,39 +63,43 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  gap: 20px;
-  padding: 40px;
+  gap: 16px;
+  padding: 28px;
   width: 100%;
-  max-width: 500px;
+  max-width: 460px;
   background: linear-gradient(135deg, rgba(168, 85, 247, 0.12), rgba(168, 85, 247, 0.04)) !important;
   border-color: rgba(168, 85, 247, 0.4) !important;
+  border-radius: 22px;
+  border: 2px solid rgba(168, 85, 247, 0.4);
+  box-shadow: 0 16px 40px rgba(0, 0, 0, 0.2);
+  transition: all 0.4s cubic-bezier(0.23, 1, 0.32, 1);
 }
 
 .joelCard:hover {
   border-color: rgba(168, 85, 247, 0.6) !important;
-  box-shadow: 0 32px 70px rgba(168, 85, 247, 0.25) !important;
-  transform: translateY(-8px);
+  box-shadow: 0 26px 55px rgba(168, 85, 247, 0.22) !important;
+  transform: translateY(-6px);
 }
 
 .statsContainer {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-  gap: 24px;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 20px;
   width: 100%;
 }
 
 .communityCard {
-  padding: 40px;
-  border-radius: 28px;
+  padding: 28px;
+  border-radius: 22px;
   background: linear-gradient(135deg, rgba(255, 255, 255, 0.08), rgba(255, 255, 255, 0.02));
   border: 2px solid rgba(255, 255, 255, 0.12);
-  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.25);
-  transition: all 0.4s cubic-bezier(0.23, 1, 0.320, 1);
+  box-shadow: 0 16px 40px rgba(0, 0, 0, 0.2);
+  transition: all 0.4s cubic-bezier(0.23, 1, 0.32, 1);
   position: relative;
   overflow: hidden;
   display: flex;
   flex-direction: column;
-  gap: 16px;
+  gap: 12px;
 }
 
 .communityCard::before {
@@ -105,62 +109,47 @@
   left: -100%;
   width: 100%;
   height: 100%;
-  background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.1), transparent);
+  background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.08), transparent);
   transition: left 0.5s ease;
 }
 
 .communityCard:hover {
-  transform: translateY(-8px);
+  transform: translateY(-6px);
   border-color: rgba(255, 255, 255, 0.25);
-  box-shadow: 0 32px 70px rgba(0, 0, 0, 0.35);
+  box-shadow: 0 26px 55px rgba(0, 0, 0, 0.3);
 }
 
-.communityCard:hover::before {
-  left: 100%;
-}
+.communityCard:hover::before { left: 100%; }
 
 .stat1 {
   border-color: rgba(244, 63, 94, 0.4);
   background: linear-gradient(135deg, rgba(244, 63, 94, 0.12), rgba(244, 63, 94, 0.04));
 }
-
-.stat1:hover {
-  border-color: rgba(244, 63, 94, 0.6);
-  box-shadow: 0 32px 70px rgba(244, 63, 94, 0.25);
-}
+.stat1:hover { border-color: rgba(244, 63, 94, 0.6); box-shadow: 0 26px 55px rgba(244, 63, 94, 0.22); }
 
 .stat2 {
   border-color: rgba(34, 197, 94, 0.4);
   background: linear-gradient(135deg, rgba(34, 197, 94, 0.12), rgba(34, 197, 94, 0.04));
 }
-
-.stat2:hover {
-  border-color: rgba(34, 197, 94, 0.6);
-  box-shadow: 0 32px 70px rgba(34, 197, 94, 0.25);
-}
+.stat2:hover { border-color: rgba(34, 197, 94, 0.6); box-shadow: 0 26px 55px rgba(34, 197, 94, 0.22); }
 
 .stat3 {
   border-color: rgba(59, 130, 246, 0.4);
   background: linear-gradient(135deg, rgba(59, 130, 246, 0.12), rgba(59, 130, 246, 0.04));
 }
-
-.stat3:hover {
-  border-color: rgba(59, 130, 246, 0.6);
-  box-shadow: 0 32px 70px rgba(59, 130, 246, 0.25);
-}
+.stat3:hover { border-color: rgba(59, 130, 246, 0.6); box-shadow: 0 26px 55px rgba(59, 130, 246, 0.22); }
 
 .statIcon {
-  font-size: 3rem;
+  font-size: 2.4rem;
   line-height: 1;
-  width: 80px;
-  height: 80px;
+  width: 64px;
+  height: 64px;
   display: flex;
   align-items: center;
   justify-content: center;
-  border-radius: 20px;
+  border-radius: 16px;
   background: rgba(255, 255, 255, 0.08);
   border: 2px solid rgba(255, 255, 255, 0.15);
-  filter: drop-shadow(0 4px 12px rgba(0, 0, 0, 0.2));
   transition: all 0.3s ease;
 }
 
@@ -168,38 +157,23 @@
   background: linear-gradient(135deg, rgba(244, 63, 94, 0.2), rgba(244, 63, 94, 0.1));
   border-color: rgba(244, 63, 94, 0.3);
 }
-
-.stat1:hover .statIcon {
-  border-color: rgba(244, 63, 94, 0.5);
-  background: linear-gradient(135deg, rgba(244, 63, 94, 0.3), rgba(244, 63, 94, 0.15));
-  transform: scale(1.1);
-}
+.stat1:hover .statIcon { border-color: rgba(244, 63, 94, 0.5); transform: scale(1.08); }
 
 .stat2 .statIcon {
   background: linear-gradient(135deg, rgba(34, 197, 94, 0.2), rgba(34, 197, 94, 0.1));
   border-color: rgba(34, 197, 94, 0.3);
 }
-
-.stat2:hover .statIcon {
-  border-color: rgba(34, 197, 94, 0.5);
-  background: linear-gradient(135deg, rgba(34, 197, 94, 0.3), rgba(34, 197, 94, 0.15));
-  transform: scale(1.1);
-}
+.stat2:hover .statIcon { border-color: rgba(34, 197, 94, 0.5); transform: scale(1.08); }
 
 .stat3 .statIcon {
   background: linear-gradient(135deg, rgba(59, 130, 246, 0.2), rgba(59, 130, 246, 0.1));
   border-color: rgba(59, 130, 246, 0.3);
 }
-
-.stat3:hover .statIcon {
-  border-color: rgba(59, 130, 246, 0.5);
-  background: linear-gradient(135deg, rgba(59, 130, 246, 0.3), rgba(59, 130, 246, 0.15));
-  transform: scale(1.1);
-}
+.stat3:hover .statIcon { border-color: rgba(59, 130, 246, 0.5); transform: scale(1.08); }
 
 .joelImageWrapper {
-  width: 280px;
-  height: 280px;
+  width: 220px;
+  height: 220px;
   border-radius: 50%;
   overflow: hidden;
   border: 3px solid rgba(168, 85, 247, 0.4);
@@ -211,7 +185,7 @@
 
 .joelCard:hover .joelImageWrapper {
   border-color: rgba(168, 85, 247, 0.8);
-  box-shadow: 0 0 30px rgba(168, 85, 247, 0.3);
+  box-shadow: 0 0 26px rgba(168, 85, 247, 0.3);
 }
 
 .joelImage {
@@ -221,146 +195,93 @@
 }
 
 .communityCard h3 {
-  margin: 0 0 12px;
-  font-size: 1.4rem;
+  margin: 0;
+  font-size: 1.2rem;
   font-weight: 800;
   color: #60a5fa;
-  letter-spacing: -0.5px;
+  letter-spacing: -0.4px;
 }
 
 .communityCard p {
   margin: 0;
   color: #cbd5e1;
-  line-height: 1.75;
-  font-size: 0.95rem;
+  line-height: 1.72;
+  font-size: 0.9rem;
 }
 
 @media (max-width: 1000px) {
-  .statsContainer {
-    grid-template-columns: repeat(2, 1fr);
-  }
+  .statsContainer { grid-template-columns: repeat(2, 1fr); }
 }
 
 @media (max-width: 640px) {
   .sectionHeader h2 {
-    font-size: clamp(1.75rem, 2.5vw, 2.2rem);
+    font-size: clamp(1.4rem, 2.5vw, 1.9rem);
   }
 
-  .sectionSubtitle {
-    padding: 8px 16px;
-    font-size: 0.95rem;
-    letter-spacing: 0.15em;
-  }
-
-  .communityGrid {
-    gap: 30px;
-  }
+  .communityGrid { gap: 20px; }
 
   .joelCard {
     max-width: 100%;
-    padding: 30px 20px;
-    gap: 16px;
+    padding: 22px 18px;
+    gap: 14px;
   }
 
   .joelImageWrapper {
-    width: 200px;
-    height: 200px;
-  }
-
-  .joelCard h3 {
-    font-size: 1.25rem;
-    margin-top: 8px;
-  }
-
-  .joelCard p {
-    font-size: 0.85rem;
+    width: 170px;
+    height: 170px;
   }
 
   .statsContainer {
     grid-template-columns: 1fr;
-    gap: 20px;
-  }
-
-  .communityCard {
-    padding: 24px;
-    gap: 12px;
-  }
-
-  .communityCard h3 {
-    font-size: 1.2rem;
-    margin-bottom: 8px;
-  }
-
-  .communityCard p {
-    font-size: 0.87rem;
-    line-height: 1.6;
-  }
-
-  .statIcon {
-    width: 70px;
-    height: 70px;
-    font-size: 2.2rem;
-  }
-}
-
-@media (max-width: 480px) {
-  .sectionHeader h2 {
-    font-size: clamp(1.5rem, 2.2vw, 1.85rem);
-  }
-
-  .sectionSubtitle {
-    padding: 6px 12px;
-    font-size: 0.85rem;
-    letter-spacing: 0.12em;
-  }
-
-  .communityGrid {
-    gap: 20px;
-  }
-
-  .joelCard {
-    padding: 20px;
-    max-width: 95vw;
-  }
-
-  .joelImageWrapper {
-    width: 150px;
-    height: 150px;
-    border-width: 2px;
-  }
-
-  .joelCard h3 {
-    font-size: 1.1rem;
-  }
-
-  .joelCard p {
-    font-size: 0.8rem;
-    text-align: center;
-  }
-
-  .statsContainer {
     gap: 16px;
   }
 
   .communityCard {
     padding: 20px;
     gap: 10px;
-    border-radius: 20px;
   }
 
-  .communityCard h3 {
-    font-size: 1.05rem;
-    margin-bottom: 6px;
-  }
-
-  .communityCard p {
-    font-size: 0.8rem;
-  }
+  .communityCard h3 { font-size: 1.05rem; }
+  .communityCard p { font-size: 0.85rem; }
 
   .statIcon {
-    width: 60px;
-    height: 60px;
+    width: 56px;
+    height: 56px;
     font-size: 2rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .sectionHeader h2 {
+    font-size: clamp(1.25rem, 2.5vw, 1.6rem);
+  }
+
+  .communityGrid { gap: 16px; }
+
+  .joelCard {
+    padding: 18px;
+    max-width: 100%;
+  }
+
+  .joelImageWrapper {
+    width: 130px;
+    height: 130px;
+    border-width: 2px;
+  }
+
+  .communityCard {
+    padding: 16px;
+    gap: 8px;
     border-radius: 16px;
+  }
+
+  .communityCard h3 { font-size: 0.97rem; }
+  .communityCard p { font-size: 0.8rem; }
+
+  .statIcon {
+    width: 50px;
+    height: 50px;
+    font-size: 1.75rem;
+    border-radius: 14px;
   }
 }
